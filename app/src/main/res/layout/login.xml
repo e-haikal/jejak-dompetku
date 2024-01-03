@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        tools:context=".Dashboard">
+
+        <TextView
+            android:id="@+id/textTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jejak"
+            android:textSize="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"/>
+
+        <TextView
+            android:id="@+id/textBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Dompet"
+            app:layout_constraintTop_toBottomOf="@+id/textTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:padding="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:textSize="18dp"
+            android:text="Log In"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/tangan"></ImageView>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selalu ada, selalu tercatat"
+            android:layout_gravity="center"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sebuah aplikasi pencatatan pengeluaran"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="yang simple, user-friendly, dan "></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="selalu ada untukmu."
+        android:layout_marginBottom="120dp"></TextView>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Buat Akun"
+        android:backgroundTint="@color/blue"></Button>
+
+</LinearLayout>

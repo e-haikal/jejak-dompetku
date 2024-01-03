@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/img_kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kembali"
+        android:layout_marginBottom="10dp"></ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Datang"
+        android:layout_gravity="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="50dp"></TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="50dp"></ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"></TextView>
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_marginBottom="20dp"></EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"></TextView>
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginBottom="30dp"></EditText>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="@color/blue"
+        android:text="Login"></Button>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvt_sandi"
+        android:text="Lupa Kata Sandi ?"
+        android:layout_gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="18dp"></TextView>
+</LinearLayout>
