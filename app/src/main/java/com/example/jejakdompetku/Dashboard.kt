@@ -44,5 +44,19 @@ class Dashboard : AppCompatActivity() {
             startActivity(pindah)
         }
 
+        val btn_logout:ImageView = findViewById(R.id.img_logout)
+        btn_logout.setOnClickListener {
+            //mengambil data tiket
+            val session: SharedPreferences = getSharedPreferences("pengguna", MODE_PRIVATE)
+            //menghapus session/tiket pengguna
+            val tiket = session.edit()
+            tiket.clear()
+            tiket.commit()
+
+            //pindah ke halaman login
+            val keluar:Intent = Intent(this, Login::class.java)
+            startActivity(keluar)
+        }
+
     }
 }
